@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graph API Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Microsoft Graph Dashboard</h2>
+
+
+    <section>
+        <h3> Authenticate</h3>
+        <button onclick="authenticate()">Generate Token</button>
+        <p id="authStatus" class="status"></p>
+    </section>
+
+
+
+    <section>
+        <h3> All Users Mail </h3>
+        <button onclick="loadMails()">Load Emails</button>
+        <ul id="mailList"></ul>
+    </section>
+
+    <section>
+        <h3> Send Mail</h3>
+        <input type="email" id="fromMail" placeholder="where to send data ">
+        <input type="email" id="toMail" placeholder="where to get data ">
+        <button onclick="sendMail()">Send</button>
+        <p id="sendStatus" class="status"></p>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
